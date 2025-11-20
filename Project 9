@@ -1,0 +1,50 @@
+class Shape:
+    def area(self):
+        return 0
+
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+class Square(Rectangle):
+    def __init__(self, side):
+        super().__init__(side, side)
+
+class Triangle(Shape):
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+
+    def area(self):
+        return 0.5 * self.base * self.height
+
+
+print("1. Rectangle")
+print("2. Square")
+print("3. Triangle")
+
+choice = int(input("Enter shape number: "))
+
+if choice == 1:
+    l = float(input("Enter length: "))
+    w = float(input("Enter width: "))
+    shape = Rectangle(l, w)
+
+elif choice == 2:
+    s = float(input("Enter side: "))
+    shape = Square(s)
+
+elif choice == 3:
+    b = float(input("Enter base: "))
+    h = float(input("Enter height: "))
+    shape = Triangle(b, h)
+
+else:
+    print("Invalid choice")
+    exit()
+
+print("Area:", shape.area())
