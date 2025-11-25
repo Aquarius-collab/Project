@@ -1,0 +1,5 @@
+Roy - Favourite Subject: Maths
+Sneha - Favourite Subject: Science
+Karan - Favourite Subject: English
+Aisha - Favourite Subject: Social Studies
+Manoj - Favourite Subject: Computer
